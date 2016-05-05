@@ -9,69 +9,59 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="io.github.kmanikumarreddy.myappportifolio.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/my_nanodegree_apss"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/popular_movies"
-        android:id="@+id/button"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:onClick="displayInfo"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/stock_hawk"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:onClick="displayInfo"/>
+            <TextView
+                android:id="@+id/Heading"
+                style="@style/WrapCenter"
+                android:layout_marginTop="5dp"
+                android:text="@string/my_nanodegree_apss"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/build_it_bigger"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:onClick="displayInfo"/>
+            <Button
+                android:id="@+id/popularMoviesButton"
+                style="@style/WrapCenter"
+                android:layout_marginTop="5dp"
+                android:onClick="displayInfo"
+                android:text="@string/popular_movies" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/make_your_app_material"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:onClick="displayInfo"/>
+            <Button
+                android:id="@+id/stockHawkButton"
+                style="@style/WrapCenter"
+                android:onClick="displayInfo"
+                android:text="@string/stock_hawk" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/go_ubiquitous"
-        android:id="@+id/button5"
-        android:layout_below="@+id/button4"
-        android:layout_centerHorizontal="true"
-        android:onClick="displayInfo"/>
+            <Button
+                android:id="@+id/buildItBiggerButton"
+                style="@style/WrapCenter"
+                android:onClick="displayInfo"
+                android:text="@string/build_it_bigger" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/capstone"
-        android:id="@+id/button6"
-        android:layout_below="@+id/button5"
-        android:layout_centerHorizontal="true"
-        android:onClick="displayInfo"/>
+            <Button
+                android:id="@+id/makeYourAppMaterialButton"
+                style="@style/WrapCenter"
+                android:onClick="displayInfo"
+                android:text="@string/make_your_app_material" />
 
+            <Button
+                android:id="@+id/goUbiquitousButton"
+                style="@style/WrapCenter"
+                android:onClick="displayInfo"
+                android:text="@string/go_ubiquitous" />
+
+            <Button
+                android:id="@+id/capstoneButton"
+                style="@style/WrapCenter"
+                android:onClick="displayInfo"
+                android:text="@string/capstone" />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
